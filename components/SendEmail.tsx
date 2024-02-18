@@ -1,21 +1,29 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import { ValidationError, useForm } from "@formspree/react";
-import React from "react";
+import React, { useEffect } from "react";
 import toast from "react-hot-toast";
 
 const sendEmail = () => {
   const [state, handleSubmit, reset] = useForm("xgegknjw");
-  const SubmitForm = (e) => {
+
+  const SubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
     handleSubmit(e);
     e.preventDefault();
-    // var formData = new FormData(e.target);
-    // const form_values = Object.fromEntries(formData);
-    document.getElementById("SubmitForm").reset();
+    const formElement = document.getElementById(
+      "SubmitForm"
+    ) as HTMLFormElement;
+    if (formElement) {
+      formElement.reset();
+    }
   };
-  if (state.succeeded) {
-    toast.success("Thank you for your message, I will get back to you soon!");
-  }
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Thank you for your message!");
+    }
+  }, [state.succeeded]);
+
   return (
     <form id="SubmitForm" className="space-y-5" onSubmit={SubmitForm}>
       <div className="flex gap-5 max-tablet:flex-col">
