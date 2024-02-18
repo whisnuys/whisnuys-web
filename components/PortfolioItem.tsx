@@ -14,7 +14,7 @@ const PortfolioItem = ({
 
   return (
     <div className="box">
-      <h4 className="mb-5">{portfolio.title}</h4>
+      <h4 className="mb-5 h-20 text-center">{portfolio.title}</h4>
       <div className="relative w-full h-80 rounded-lg overflow-hidden group cursor-pointer mb-5">
         <Image
           src={currentImg}

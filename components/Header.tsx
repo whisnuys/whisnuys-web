@@ -20,15 +20,6 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <ul>
-          <Link
-            href={"/contact"}
-            className="btn btn-primary hover:bg-teal-600 transition-colors duration-200"
-          >
-            <Phone size={22} />
-            Contact Me
-          </Link>
-        </ul>
       </nav>
       <MobileMenu />
     </header>
