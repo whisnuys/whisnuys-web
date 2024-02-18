@@ -34,7 +34,10 @@ const FaqsSection = () => {
               goals.
             </p>
             <div data-aos="fade-left" data-aos-delay="200">
-              <Link href={"/contact"} className="btn btn-primary w-max">
+              <Link
+                href={"/contact"}
+                className="btn btn-primary w-max hover:bg-teal-600 transition-colors duration-200"
+              >
                 Contact Me <ArrowRight />
               </Link>
             </div>

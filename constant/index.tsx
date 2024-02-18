@@ -107,92 +107,32 @@ export const benefits = [
 export const portfolios = [
   {
     id: 1,
-    title: "Z - Aura Perfume Website",
-    link: "#",
+    title: "Coinfo - RealTime Crypto Market Data",
+    link: "https://github.com/whisnuys/flutter-coinfo",
     images: [
-      "/images/portfolio-1.png",
-      "/images/portfolio-2.png",
-      "/images/portfolio-3.png",
+      "/images/coinfo/coinfo1.png",
+      "/images/coinfo/coinfo2.png",
+      "/images/coinfo/coinfo3.png",
     ],
   },
   {
     id: 2,
-    title: "Forhelp Charity Website",
-    link: "#",
+    title: "Bookflights - Simple Booking Flights",
+    link: "https://github.com/whisnuys/flutter-bookflights-app",
     images: [
-      "/images/portfolio-2.png",
-      "/images/portfolio-3.png",
-      "/images/portfolio-1.png",
+      "/images/bookflights/bookflight1.png",
+      "/images/bookflights/bookflight2.png",
+      "/images/bookflights/bookflight3.png",
     ],
   },
   {
     id: 3,
-    title: "Skill Bridge Website",
-    link: "#",
+    title: "Calculator App",
+    link: "https://github.com/whisnuys/flutter-calculator-app",
     images: [
-      "/images/portfolio-3.png",
-      "/images/portfolio-1.png",
-      "/images/portfolio-2.png",
-    ],
-  },
-  {
-    id: 4,
-    title: "Current Vandi Website",
-    link: "#",
-    images: [
-      "/images/portfolio-4.png",
-      "/images/portfolio-5.png",
-      "/images/portfolio-6.png",
-    ],
-  },
-  {
-    id: 5,
-    title: "Fit Fusion Gym Website",
-    link: "#",
-    images: [
-      "/images/portfolio-5.png",
-      "/images/portfolio-6.png",
-      "/images/portfolio-7.png",
-    ],
-  },
-  {
-    id: 6,
-    title: "DX Digital Agency Website",
-    link: "#",
-    images: [
-      "/images/portfolio-6.png",
-      "/images/portfolio-7.png",
-      "/images/portfolio-8.png",
-    ],
-  },
-  {
-    id: 7,
-    title: "Little Learners Website",
-    link: "#",
-    images: [
-      "/images/portfolio-7.png",
-      "/images/portfolio-8.png",
-      "/images/portfolio-9.png",
-    ],
-  },
-  {
-    id: 8,
-    title: "StreamVibe Website",
-    link: "#",
-    images: [
-      "/images/portfolio-8.png",
-      "/images/portfolio-9.png",
-      "/images/portfolio-4.png",
-    ],
-  },
-  {
-    id: 9,
-    title: "YourBank Website",
-    link: "#",
-    images: [
-      "/images/portfolio-9.png",
-      "/images/portfolio-4.png",
-      "/images/portfolio-5.png",
+      "/images/calc/calc1.png",
+      "/images/calc/calc2.png",
+      "/images/calc/calc3.png",
     ],
   },
 ];
@@ -336,24 +276,6 @@ export const faqs = [
     answer:
       "Yes, I offer website maintenance services. I will ensure that your website is up-to-date and running smoothly.",
   },
-  {
-    id: 3,
-    question: "Do you offer website maintenance services?",
-    answer:
-      "Yes, I offer website maintenance services. I will ensure that your website is up-to-date and running smoothly.",
-  },
-  {
-    id: 4,
-    question: "Do you offer website maintenance services?",
-    answer:
-      "Yes, I offer website maintenance services. I will ensure that your website is up-to-date and running smoothly.",
-  },
-  {
-    id: 5,
-    question: "Do you offer website maintenance services?",
-    answer:
-      "Yes, I offer website maintenance services. I will ensure that your website is up-to-date and running smoothly.",
-  },
 ];
 export const socialLinks = [
   {
@@ -395,30 +317,23 @@ export const contactDetails = [
 export const timeline = [
   {
     id: 1,
-    title: "Senior Web Developer",
-    duration: "2018 - Present",
+    title: "Marketing at Untung Bersama Sejahtera Ltd.",
+    duration: "2019 - Present",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Responsible for planning and executing marketing strategies to reach new customers. Execute invoices and receive invoice payments for sales made by sales. Assisting other departmental staff to provide information and a positive product image. Responsible for researching the latest trends and customer needs to enable an effective sales process.",
   },
   {
     id: 2,
-    title: "Web Developer",
-    duration: "2015 - 2018",
+    title: "Mobile Developer - Freelance",
+    duration: "Present",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Transforming ideas into intuitive and engaging mobile experiences is my expertise. With proficiency in Flutter and Dart, I craft sleek and responsive mobile applications that seamlessly run across iOS and Android platforms.",
   },
   {
     id: 3,
-    title: "Junior Web Developer",
-    duration: "2013 - 2015",
+    title: "Bachelor , Amikom Purwokerto University , Purwokerto",
+    duration: "2021 - Present",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  },
-  {
-    id: 4,
-    title: "Degree in Computer Science",
-    duration: "2010 - 2013",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "Undertaking a Bachelor's program in Computer Science at Amikom Purwokerto University in Purwokerto, focusing on foundational principles and advanced concepts in software development, algorithms, and computer systems. Currently engaged in rigorous academic coursework and practical learning experiences to develop a strong foundation in programming languages, data structures, and algorithms.",
   },
 ];

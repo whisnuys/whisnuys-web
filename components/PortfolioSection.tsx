@@ -35,17 +35,17 @@ const PortfolioSection = ({
       data-aos="fade-down"
       data-aos-delay="100"
     >
-      <div className="pb-3 border-b border-peach flex justify-between items-center">
+      <div className="pb-3 border-b border-peach flex justify-between items-center ">
         <p>{title}</p>
         <div className="flex gap-2">
           <button
-            className="bg-teal border border-teal p-1 rounded text-white"
+            className="bg-teal border border-teal p-1 rounded text-white hover:bg-teal-600 transition-colors duration-200"
             onClick={() => swiperRef.current?.slidePrev()}
           >
             <ChevronLeft />
           </button>
           <button
-            className="bg-teal border border-teal p-1 rounded text-white"
+            className="bg-teal border border-teal p-1 rounded text-white hover:bg-teal-600 transition-colors duration-200"
             onClick={() => swiperRef.current?.slideNext()}
           >
             <ChevronRight />

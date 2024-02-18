@@ -29,7 +29,8 @@ const Footer = () => {
             <a
               href={link.url}
               key={index}
-              className="w-10 h-10 bg-teal text-white flex items-center justify-center rounded"
+              target="_blank"
+              className="w-10 h-10 bg-teal text-white flex items-center justify-center rounded hover:bg-teal-600 transition-colors duration-200"
             >
               <link.icon strokeWidth={0} fill="currentColor" />
             </a>

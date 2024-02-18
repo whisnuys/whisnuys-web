@@ -22,13 +22,13 @@ const page = () => {
           </div> */}
           <h2 className="text-grey-700">My Portfolios</h2>
           <p className="text-grey-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugit
-            impedit sit, id itaque voluptates?
+            Explore a collection of my past projects, experiences, and
+            achievements.
           </p>
         </div>
       </section>
 
-      <PortfolioSection data={portfolios} title={"Projects Done"} />
+      <PortfolioSection data={portfolios} title={"Mobile App"} />
     </>
   );
 };

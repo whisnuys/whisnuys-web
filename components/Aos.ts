@@ -9,6 +9,6 @@ export const AOSInit = () => {
     AOS.init({
       once: true,
     });
-  });
+  }, []);
   return null;
 };

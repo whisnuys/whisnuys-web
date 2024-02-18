@@ -2,6 +2,7 @@ import FaqsSection from "@/components/FaqsSection";
 import { socialLinks } from "@/constant";
 import { Metadata } from "next";
 import React from "react";
+import SendEmail from "@/components/SendEmail";
 
 export const metadata: Metadata = {
   title: "Contact - whisnuys",
@@ -10,16 +11,16 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <section
-        className="max-width section-padding"
-        data-aos="fade-down"
-        data-aos-delay="100"
-      >
-        <div className="box text-center flex flex-col gap-3">
+      <section className="max-width section-padding">
+        <div
+          className="box text-center flex flex-col gap-3"
+          data-aos="fade-down"
+          data-aos-delay="100"
+        >
           <h2 className="text-grey-700">Feel free to ask me anything.</h2>
           <p className="text-grey-600">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugit
-            impedit sit, id itaque voluptates?
+            I am always open to discussing new projects, creative ideas, or
+            opportunities to be part of your visions.
           </p>
         </div>
       </section>
@@ -35,13 +36,13 @@ const page = () => {
               <h6 className="text-grey-700">whisnusaputra30@gmail.com</h6>
             </div>
             <div className="box !p-6">
-              <p className="text-grey-600">Give Me a Call on Telegram</p>
+              <p className="text-grey-600">You can message me on telegram</p>
               <h6 className="text-grey-700">@whisnuys</h6>
             </div>
             <div className="box !p-6">
               <p className="text-grey-600">Location</p>
               <h6 className="text-grey-700">
-                Purwokerto, Jawa Tengah, Indonesia
+                Purwokerto, Central Java, Indonesia
               </h6>
             </div>
           </div>
@@ -53,7 +54,8 @@ const page = () => {
               <a
                 href={link.url}
                 key={index}
-                className="w-10 h-10 bg-teal text-white flex items-center justify-center rounded"
+                target="_blank"
+                className="w-10 h-10 bg-teal text-white flex items-center justify-center rounded hover:bg-teal-600 transition-colors duration-200"
               >
                 <link.icon strokeWidth={0} fill="currentColor" />
               </a>
@@ -61,23 +63,7 @@ const page = () => {
           </div>
         </div>
         <div className="box w-full" data-aos="fade-left" data-aos-delay="200">
-          <form action="" className="space-y-5">
-            <div className="flex gap-5 max-tablet:flex-col">
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
-            </div>
-            <div className="flex gap-5 max-tablet:flex-col">
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="Subject" />
-            </div>
-            <textarea
-              placeholder="Message"
-              className="min-h-[200px]"
-            ></textarea>
-            <button type="submit" className="btn btn-primary">
-              Send
-            </button>
-          </form>
+          <SendEmail />
         </div>
       </section>
 

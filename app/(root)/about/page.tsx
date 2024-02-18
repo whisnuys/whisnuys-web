@@ -53,7 +53,8 @@ const page = () => {
             <Link
               href={"/pdfs/whisnucv.pdf"}
               download={"whisnucv.pdf"}
-              className="btn btn-primary tablet:w-max"
+              target="_blank"
+              className="btn btn-primary tablet:w-max hover:bg-teal-600 transition-colors duration-200"
             >
               Download CV
             </Link>
@@ -67,7 +68,7 @@ const page = () => {
             </div>
             <div className="flex items-center gap-10 justify-center tablet:block">
               <h3 className="text-grey-700">
-                2 <span className="text-teal">+</span>
+                1 <span className="text-teal">+</span>
               </h3>
               <p className="text-grey-600">Years of Experience</p>
             </div>
@@ -82,8 +83,8 @@ const page = () => {
         data-aos-delay="100"
       >
         <SectionHeading
-          title="Milestones of My Career"
-          subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum accusantium voluptatibus animi maxime, minus magni id porro placeat eveniet. Architecto dolores expedita vel nesciunt possimus ducimus dolore, perferendis pariatur officia!"
+          title="Timeline"
+          subtitle="A Journey Through Professional Growth and Achievements"
         />
         <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px tablet:before:mx-auto tablet:before:translate-x-0 before:h-full before:w-0.5 before:bg-teal before:bg-opacity-30">
           {timeline.map((item, index) => (
@@ -91,7 +92,7 @@ const page = () => {
               key={index}
               className="relative flex items-center justify-between tablet:justify-normal tablet:odd:flex-row-reverse group"
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-peach-400 shrink-0 tablet:order-1 tablet:group-odd:translate-x-1/2 tablet:group-even:translate-x-1/2 group-first:before:absolute group-first:before:w-1 group-first:before:h-20 group-first:before:bottom-full group-first:before:bg-peach-600 group-last:before:absolute group-last:before:w-1 group-last:before:h-20 group-last:before:bottom-full group-last:before:top-full group-last:before:bg-peach-600">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-peach-400 shrink-0 tablet:order-1 tablet:group-odd:-translate-x-1/2 tablet:group-even:translate-x-1/2 group-first:before:absolute group-first:before:w-1 group-first:before:h-20 group-first:before:bottom-full  group-last:before:absolute group-last:before:w-1 group-last:before:h-20 group-last:before:bottom-full group-last:before:top-full ">
                 <span
                   className="w-3 h-3 bg-teal rounded-full"
                   data-aos="fade-down"
@@ -107,7 +108,9 @@ const page = () => {
                   <h6 className="text-grey-700">{item.title}</h6>
                   <p className="font-semibold text-teal">{item.duration}</p>
                 </div>
-                <div className="text-grey-600">{item.description}</div>
+                <div className="text-grey-600 ">
+                  <p>{item.description}</p>
+                </div>
               </div>
             </div>
           ))}

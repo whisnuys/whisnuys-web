@@ -47,7 +47,7 @@ const MobileMenu = () => {
         <nav className="flex flex-col items-center justify-center flex-1 gap-10">
           <ul className="flex items-center flex-col gap-5">
             {navLinks.map((link, index) => (
-              <li key={index}>
+              <li key={index} onClick={toggleMenu}>
                 <NavLink
                   href={link.url}
                   label={link.label}
@@ -68,6 +68,7 @@ const MobileMenu = () => {
             <a
               href={link.url}
               key={index}
+              target="_blank"
               className="text-grey-700 hover:text-teal transition-colors"
             >
               {link.label}

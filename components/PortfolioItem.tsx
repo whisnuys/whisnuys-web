@@ -23,9 +23,11 @@ const PortfolioItem = ({
           className="object-cover"
         />
         <div className="bg-black bg-opacity-10 backdrop-blur-[1px] absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-          <div className="w-16 h-16 flex items-center justify-center bg-teal-700 border rounded-lg border-teal-400 p-3 text-white">
-            <ArrowUpRight />
-          </div>
+          <a href={portfolio.link} target="_blank">
+            <div className="w-16 h-16 flex items-center justify-center bg-teal-700 border rounded-lg border-teal-400 p-3 text-white">
+              <ArrowUpRight />
+            </div>
+          </a>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-3">

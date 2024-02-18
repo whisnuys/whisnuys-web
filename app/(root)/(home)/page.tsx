@@ -50,7 +50,10 @@ const page = () => {
             data-aos="fade-down"
             data-aos-delay="300"
           >
-            <Link href={"/portfolio"} className="btn btn-primary">
+            <Link
+              href={"/portfolio"}
+              className="btn btn-primary hover:bg-teal-600 transition-colors duration-200"
+            >
               View Portfolio
               <ArrowRight size={16} />
             </Link>
@@ -243,7 +246,7 @@ const page = () => {
         </div>
         <Link
           href={"/portfolio"}
-          className="btn btn-primary mt-10 mx-auto w-max"
+          className="btn btn-primary mt-10 mx-auto w-max hover:bg-teal-600 transition-colors duration-200"
           data-aos="fade-up"
           data-aos-delay="200"
         >

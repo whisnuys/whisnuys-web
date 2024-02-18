@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@icons-pack/react-simple-icons": "^9.3.0",
     "aos": "^2.3.4",
     "lucide-react": "^0.323.0",
@@ -16,6 +17,7 @@
     "nextjs-toploader": "^1.6.6",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
     "simple-icons": "^11.4.0",
     "swiper": "^11.0.6"
   },
