@@ -22,6 +22,7 @@ const page = () => {
           <Image
             src={"/images/hero.png"}
             fill
+            priority
             alt="about-img"
             className="object-cover"
           />

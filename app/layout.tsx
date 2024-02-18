@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-grey-1000 ${manrope.className}`}>
-        <NextTopLoader color="#00adb5" showSpinner={false} />
         <AOSInit />
         <Toaster position="bottom-center" />
+        <NextTopLoader color="#00adb5" showSpinner={false} />
         {children}
       </body>
     </html>

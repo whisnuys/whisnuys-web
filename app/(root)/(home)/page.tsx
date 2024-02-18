@@ -150,6 +150,7 @@ const page = () => {
             src={"/images/s1.png"}
             alt="hero"
             fill
+            priority
             className="object-cover"
           />
         </div>
