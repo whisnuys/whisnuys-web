@@ -56,10 +56,6 @@ const MobileMenu = () => {
               </li>
             ))}
           </ul>
-          <Link href={"/contact"} className="btn btn-primary">
-            <Phone size={22} />
-            Contact Me
-          </Link>
         </nav>
 
         <div className="w-full h-20 flex items-center justify-between max-width border-t border-peach">
